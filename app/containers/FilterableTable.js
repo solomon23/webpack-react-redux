@@ -26,7 +26,7 @@ FilterableTable.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  filter: state.filter.isRequired,
+  filter: state.filter,
 })
 
 const mapDispatchToProps = dispatch => ({
