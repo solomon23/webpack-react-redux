@@ -7,7 +7,7 @@
     "test": "",
     "start": "node server",
     "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "eslint": "eslint ."
+    "eslint": "node ./node_modules/eslint/bin/eslint.js ./app --ext .js --ignore-path .gitignore --cache"
   },
   "keywords": [
     "es6",
@@ -36,9 +36,12 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
-    "eslint": "^2.9.0",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
     "eslint-loader": "^1.5.0",
-    "eslint-plugin-react": "^5.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.16.1",
     "json-loader": "^0.5.4",

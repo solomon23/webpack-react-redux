@@ -1,12 +1,12 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from 'react'
 
 const ProductRow = ({ data }) =>
-    <div>
-        <p>{data.name} = {data.price} </p>
-    </div>;
+  <div>
+    <p>{data.name} = {data.price} </p>
+  </div>
 
 ProductRow.propTypes = {
-    data: PropTypes.object
-};
+  data: PropTypes.object.isRequired,
+}
 
-export default ProductRow;
+export default ProductRow
